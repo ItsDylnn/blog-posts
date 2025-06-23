@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Posts</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Blog Posts</h1>
+  <div id="post-list"></div>
+  <div id="post-detail"></div>
+
+  <h2>Add New Post</h2>
+  <form id="new-post-form">
+    <input type="text" id="title" name="title" placeholder="Title" required /><br>
+    <input type="text" id="author" name="author" placeholder="Author" required /> <br>
+    <textarea id="content" name="content" placeholder="Content" required></textarea>
+    <button id="add" type="submit">Add Post</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
