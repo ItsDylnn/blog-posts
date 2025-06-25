@@ -1,7 +1,7 @@
 const baseURL = "http://localhost:3000/posts";
 
 function displayPosts() {
-  fetch(baseURL)
+  fetch("https://blog-posts-m903.onrender.com/posts")
     .then(response => response.json())
     .then(posts => {
       const postListDiv = document.getElementById("post-list");
