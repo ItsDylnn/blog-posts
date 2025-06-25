@@ -1,4 +1,5 @@
-const baseURL = "http://localhost:3000/posts";
+const baseURL = "https://blog-posts-m903.onrender.com/posts";
+
 
 function displayPosts() {
   fetch("https://blog-posts-m903.onrender.com/posts")
@@ -92,17 +93,6 @@ fetch(baseURL, {
     console.error("Error adding new post:", error);
   });
 
-
-    const postListDiv = document.getElementById("post-list");
-    const postDiv = document.createElement("div");
-    postDiv.className = "post-item";
-
-    const postTitle = document.createElement("h3");
-    postTitle.textContent = newPost.title;
-    postDiv.appendChild(postTitle);
-    postListDiv.appendChild(postDiv);
-
-    form.reset();
   });
 }
 
